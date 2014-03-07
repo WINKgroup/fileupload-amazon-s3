@@ -1,0 +1,27 @@
+{
+  "name": "fileupload-example-amazon-s3",
+  "version": "0.0.1",
+  "description": "example to upload a file to amazon s3",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Andrea Giglio",
+  "license": "BSD",
+   "keywords": [
+    "amazon",
+    "s3",
+    "upload",
+    "image",
+    "photo",
+    "aws"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "aws-sdk":"*"
+  }
+}
