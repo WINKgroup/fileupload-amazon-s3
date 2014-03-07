@@ -47,7 +47,7 @@ app.post('/upload', function (req, resp) {
 
             // File configuration 
             var params = {
-                Bucket: 'livetripboxtest',
+                Bucket: 'yourBucketName',
                 Key: 'myImage.png',
                 Body: data
             };
