@@ -2,7 +2,16 @@ var express = require("express");
 var AWS = require('aws-sdk');
 AWS.config.loadFromPath('./config.json');
 var app = express()
+
 var s3 = new AWS.S3();
+
+/*
+If yout whant use other endpoint
+var _s3 = new AWS.S3({
+    endpoint: 'http://r1-it.storage.cloud.it' // Aruba
+});
+*/
+
 
 /// Include the express body parser
 app.configure(function () {
@@ -45,7 +54,7 @@ app.post('/upload', function (req, resp) {
 
         } else {
 
-            // File configuration 
+            // File configuration
             var params = {
                 Bucket: 'yourBucketName',
                 Key: 'myImage.png',

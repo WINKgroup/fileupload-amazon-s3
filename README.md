@@ -40,6 +40,17 @@ You have to insert the keys in the file `config.json`
 ```
 For more informations about region [http://docs.aws.amazon.com/general/latest/gr/rande.html](http://docs.aws.amazon.com/general/latest/gr/rande.html)
  
+ **For user different endpoint**
+ 
+ ````
+//Aruba  S3
+ var _s3 = new AWS.S3({
+    endpoint: 'http://r1-it.storage.cloud.it'
+});
+
+````
+ 
+ 
 ## Start
 To run the server locally, open a terminal and navigate to the directory you cloned the project to. Then run the following commands:
 
